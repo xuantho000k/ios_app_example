@@ -2,9 +2,11 @@
 
 # Installation
 
-- First, install dependencies
-  pod install
-- Then run
+- First, install dependencies.
+
+  `pod install`
+  
+- Then open the `.xcworkspace` file and run
 
 # Requirements
 
