@@ -36,6 +36,7 @@ This is a small movie's info app follow the MVC architecture patterns that has c
 - [Swift style guide](https://github.com/raywenderlich/swift-style-guide)
 - [iOS developer notes for Profesionals book](https://goalkicker.com/iOSBook/)
 - [iOS good practices](https://github.com/futurice/ios-good-practices)
+- [Building Router using Alamofire Router](https://chaione.com/blog/routers-swift-protocol-oriented-1/)
 
 # License
 MIT License. See [LICENSE](https://github.com/xuantho000k/ios_app_example/blob/master/LICENSE) for details.
