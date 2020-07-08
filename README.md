@@ -1,5 +1,16 @@
 # Overview
 
+This is a small movie's info app follow the MVC architecture patterns that has complex UI.
+
+- Autolayout
+- Custom view, table view cell and collection with xib
+- Use collection view in table view cell
+- Use some design patterns like Singleton, Facade, Delegation
+- Configure multi enviroment
+- Use serveral libs Alamofire, SwiftyJSON, Kingfisher
+- Use IBDesignable
+- [The Movie DB API](https://www.themoviedb.org/)
+
 # Installation
 
 - First, install dependencies.
