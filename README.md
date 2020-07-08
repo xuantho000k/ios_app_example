@@ -1,5 +1,11 @@
 # Overview
 
+# Installation
+
+- First, install dependencies
+  pod install
+- Then run
+
 # Requirements
 
 - iOS 11.0+ / macOS 10.15+
@@ -19,4 +25,4 @@
 - [iOS good practices](https://github.com/futurice/ios-good-practices)
 
 # License
-MIT License. See [LICENSE](https://github.com/xuantho000k/ios_app_example/blob/master/README.md) for details.
+MIT License. See [LICENSE](https://github.com/xuantho000k/ios_app_example/blob/master/LICENSE) for details.
