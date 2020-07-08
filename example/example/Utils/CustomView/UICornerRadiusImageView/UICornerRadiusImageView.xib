@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UICornerRadiusImageView" customModule="Example" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="gLU-ZG-aVG" id="3zQ-gL-TBQ"/>
+                <outlet property="imgView" destination="fTH-kX-qbm" id="sB0-co-sbO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLU-ZG-aVG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTH-kX-qbm">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gLU-ZG-aVG" firstAttribute="leading" secondItem="fTH-kX-qbm" secondAttribute="leading" id="3xn-9w-bfB"/>
+                <constraint firstItem="gLU-ZG-aVG" firstAttribute="top" secondItem="fTH-kX-qbm" secondAttribute="top" id="4Ga-6F-iNj"/>
+                <constraint firstAttribute="bottom" secondItem="fTH-kX-qbm" secondAttribute="bottom" constant="5" id="KyN-JL-qpS"/>
+                <constraint firstItem="fTH-kX-qbm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f0R-0V-WQM"/>
+                <constraint firstItem="gLU-ZG-aVG" firstAttribute="bottom" secondItem="fTH-kX-qbm" secondAttribute="bottom" id="mUj-a9-ZcN"/>
+                <constraint firstItem="fTH-kX-qbm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nGD-r7-Vuh"/>
+                <constraint firstItem="gLU-ZG-aVG" firstAttribute="trailing" secondItem="fTH-kX-qbm" secondAttribute="trailing" id="pN4-uF-Dcs"/>
+                <constraint firstAttribute="trailing" secondItem="fTH-kX-qbm" secondAttribute="trailing" id="rSh-T9-QWe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="315.06696428571428"/>
+        </view>
+    </objects>
+</document>

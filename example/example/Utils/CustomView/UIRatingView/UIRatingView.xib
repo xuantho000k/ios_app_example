@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIRatingView" customModule="example" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="lOe-nZ-ZpQ" id="WnG-Jk-Hz5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-nZ-ZpQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0K-wW-1iX">
+                            <rect key="frame" x="0.0" y="82" width="79" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="T0K-wW-1iX" secondAttribute="height" multiplier="1:1" id="Tt2-Ea-XJ2"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-star-bg"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9i-iy-0oE">
+                            <rect key="frame" x="84" y="82" width="78.5" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Y9i-iy-0oE" secondAttribute="height" multiplier="1:1" id="KJn-sj-a1P"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-star-bg"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zw-JM-sbC">
+                            <rect key="frame" x="167.5" y="82" width="79" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="9zw-JM-sbC" secondAttribute="height" multiplier="1:1" id="D25-GJ-qp6"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-star-bg"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ8-XF-CaN">
+                            <rect key="frame" x="251.5" y="82" width="78.5" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="kZ8-XF-CaN" secondAttribute="height" multiplier="1:1" id="Egq-wd-Hca"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-star-bg"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWO-nR-GFW">
+                            <rect key="frame" x="335" y="82" width="79" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="OWO-nR-GFW" secondAttribute="height" multiplier="1:1" id="Ric-eA-QJV"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-star-bg"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lOe-nZ-ZpQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jat-ZW-oSQ"/>
+                <constraint firstAttribute="trailing" secondItem="lOe-nZ-ZpQ" secondAttribute="trailing" id="g16-1e-1Bp"/>
+                <constraint firstItem="lOe-nZ-ZpQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kJV-f8-QBn"/>
+                <constraint firstAttribute="bottom" secondItem="lOe-nZ-ZpQ" secondAttribute="bottom" id="rkX-DY-4iF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="355.24553571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-star-bg" width="13" height="12.5"/>
+    </resources>
+</document>

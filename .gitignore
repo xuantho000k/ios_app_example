@@ -1,0 +1,4 @@
+Podfile.lock
+example/Pods
+**/xcuserdata/
+contents.xcworkspacedata

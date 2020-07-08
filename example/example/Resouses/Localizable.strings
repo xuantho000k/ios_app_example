@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  example
+
+  Created by Nguyen Xuan Tho on 1/22/20.
+  Copyright © 2020 ThoNX. All rights reserved.
+*/
+
+//Error
+"Error.SomethingWentWrong" = "Something went wrong an error occurred while connecting to the server.";
+"Error.JsonSerialization" = "Json parsing error.";
+"Error.NoNetwork" = "The Internet connection appears to be offline.";
+"Error.TimeOut" = "The connection timed out.";
+
+//Home Screen
+"HomeScreen.Discover" = "Discover";
+"HomeScreen.TVShow" = "TV Show";
+"HomeScreen.Movie" = "Movies";
+"HomeScreen.Category" = "CATEGORY";
+"HomeScreen.TopRated" = "TOP RATED";
+"HomeScreen.UpComing" = "UPCOMING";
+"HomeScreen.Popular" = "POPULAR";
+"HomeScreen.NowPlaying" = "NOW PLAYING";
+
+//Detail Screen
+"DetailScreen.Readmore" = "Read more";
+"DetailScreen.Favorite" = "Favorite";
+"DetailScreen.YourRate" = "Your Rate";
+"DetailScreen.WriteAComment" = "WRITE A COMMENT";
+"DetailScreen.SeriesCast" = "Series Cast";
+"DetailScreen.Video" = "Video";
+"DetailScreen.Comments" = "Comments";
+"DetailScreen.Recomendation" = "Recomendations";

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="RatingViewCell" customModule="example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="269"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="269"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-Qv-DaX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="269"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Y7-cP-Uv2" customClass="UITitleView" customModule="example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="8Om-Xr-wqg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showOpenButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVI-hx-m0P">
+                                <rect key="frame" x="0.0" y="50" width="320" height="219"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtF-pB-XUQ" customClass="UIRatingView" customModule="example" customModuleProvider="target">
+                                        <rect key="frame" x="105" y="20" width="110" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EqH-4b-SLG"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhX-fi-dYt">
+                                        <rect key="frame" x="131.5" y="60" width="57.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" red="0.60999999999999999" green="0.60999999999999999" blue="0.60999999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsy-7c-ffU">
+                                        <rect key="frame" x="117" y="105.5" width="86" height="37"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47999999999999998" blue="0.84999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lsy-7c-ffU" secondAttribute="bottom" constant="20" id="9Ta-dX-CIk"/>
+                                    <constraint firstItem="Lsy-7c-ffU" firstAttribute="centerX" secondItem="MVI-hx-m0P" secondAttribute="centerX" id="HAj-f2-Kn5"/>
+                                    <constraint firstItem="dtF-pB-XUQ" firstAttribute="centerX" secondItem="MVI-hx-m0P" secondAttribute="centerX" id="VPz-GO-G2E"/>
+                                    <constraint firstItem="dtF-pB-XUQ" firstAttribute="top" secondItem="MVI-hx-m0P" secondAttribute="top" constant="20" id="bEG-cx-EDF"/>
+                                    <constraint firstItem="HhX-fi-dYt" firstAttribute="centerX" secondItem="MVI-hx-m0P" secondAttribute="centerX" id="e7E-st-vra"/>
+                                    <constraint firstItem="HhX-fi-dYt" firstAttribute="top" secondItem="dtF-pB-XUQ" secondAttribute="bottom" constant="10" id="ky5-5t-2lV"/>
+                                    <constraint firstItem="Lsy-7c-ffU" firstAttribute="top" secondItem="HhX-fi-dYt" secondAttribute="bottom" constant="20" id="rRz-WA-ANA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nVJ-Qv-DaX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ikl-pO-VqD"/>
+                    <constraint firstAttribute="bottom" secondItem="nVJ-Qv-DaX" secondAttribute="bottom" id="ZLP-V3-ymZ"/>
+                    <constraint firstItem="nVJ-Qv-DaX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="c77-BD-WhM"/>
+                    <constraint firstAttribute="trailing" secondItem="nVJ-Qv-DaX" secondAttribute="trailing" id="oC8-KI-y2d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnWrite" destination="Lsy-7c-ffU" id="aQs-S0-Jtc"/>
+                <outlet property="lblRate" destination="HhX-fi-dYt" id="lao-gS-q7v"/>
+                <outlet property="ratingView" destination="dtF-pB-XUQ" id="1Vw-Ig-3gL"/>
+                <outlet property="titleView" destination="2Y7-cP-Uv2" id="zmK-8X-fDQ"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="189.17410714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
