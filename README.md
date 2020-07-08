@@ -11,6 +11,8 @@ This is a small movie's info app follow the MVC architecture patterns that has c
 - Use IBDesignable
 - [The Movie DB API](https://www.themoviedb.org/)
 
+![](https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/1.png) ![](https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/2.png) ![](https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/3.png)
+
 # Installation
 
 - First, install dependencies.
