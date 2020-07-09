@@ -1,6 +1,6 @@
 # Overview
 
-This is a small movie's info app follow the MVC architecture patterns that has complex UI.
+This is a small movie's info app follow the MVC architecture patterns that has complex UI. Easy to change to other patterns like MVVM and so forth.
 
 - Autolayout, UIKit
 - Custom view, table view cell and collection with xib
@@ -15,9 +15,7 @@ This is a small movie's info app follow the MVC architecture patterns that has c
 - Pull to refresh, load more
 - DispatchGroup
 
-<img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/1.png" width="200">
-<img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/2.png" width="200">
-<img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/3.png" width="200">
+<img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/1.png" width="200"><img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/2.png" width="200"><img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/3.png" width="200">
 
 # Installation
 
