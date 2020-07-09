@@ -2,16 +2,22 @@
 
 This is a small movie's info app follow the MVC architecture patterns that has complex UI.
 
-- Autolayout
+- Autolayout, UIKit
 - Custom view, table view cell and collection with xib
 - Use collection view in table view cell
 - Use some design patterns like Singleton, Facade, Delegation
 - Configure multi enviroment
-- Use serveral libs Alamofire, SwiftyJSON, Kingfisher
+- Manage API with Alamofire
+- Parse JSON Data with SwiftyJSON
+- Load and cache images with Kingfisher
 - Use IBDesignable
 - [The Movie DB API](https://www.themoviedb.org/)
+- Pull to refresh, load more
+- DispatchGroup
 
-![](https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/1.png | width=100) ![](https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/2.png | width=100) ![](https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/3.png | width=100)
+<img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/1.png" width="200">
+<img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/2.png" width="200">
+<img src="https://github.com/xuantho000k/ios_app_example/blob/master/Screenshots/3.png" width="200">
 
 # Installation
 
@@ -29,9 +35,9 @@ This is a small movie's info app follow the MVC architecture patterns that has c
 
 # Library
 
-- [Alamofire](https://github.com/Alamofire/Alamofire) to manage API
-- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) to parse JSON data
-- [Kingfisher](https://github.com/onevcat/Kingfisher) to load and cache images
+- [Alamofire](https://github.com/Alamofire/Alamofire)
+- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+- [Kingfisher](https://github.com/onevcat/Kingfisher)
 
 # References
 
