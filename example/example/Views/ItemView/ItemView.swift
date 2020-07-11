@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-protocol ItemViewDelegate {
+protocol ItemViewDelegate: AnyObject {
     
     func didTapAtItem(_ id: Int)
     func willLoadMore()
@@ -19,7 +19,7 @@ class ItemView: UICustomView {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var delegate: ItemViewDelegate?
+    weak var delegate: ItemViewDelegate?
     
     private var data: RowModel?
     

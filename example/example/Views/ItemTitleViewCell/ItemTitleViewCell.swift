@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ItemTitleViewCellDelegate {
+protocol ItemTitleViewCellDelegate: AnyObject {
 
     func didTapAtCell(withItemId id: Int)
     func loadMoreDataForCell(_ cell: ItemTitleViewCell)
@@ -24,7 +24,7 @@ class ItemTitleViewCell: UITableViewCell {
     @IBOutlet weak var itemView: ItemView!
     @IBOutlet weak var lcHeight: NSLayoutConstraint!
     
-    var delegate: ItemTitleViewCellDelegate?
+    weak var delegate: ItemTitleViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()

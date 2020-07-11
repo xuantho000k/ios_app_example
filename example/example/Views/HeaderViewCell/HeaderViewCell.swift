@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 import Kingfisher
 
-protocol HeaderViewCellDelegate {
+protocol HeaderViewCellDelegate: AnyObject {
     func didTappAtBackButton()
 }
 
@@ -31,7 +31,7 @@ class HeaderViewCell: UITableViewCell {
     @IBOutlet weak var actionView: UIView!
     
     
-    var delegate: HeaderViewCellDelegate?
+    weak var delegate: HeaderViewCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
