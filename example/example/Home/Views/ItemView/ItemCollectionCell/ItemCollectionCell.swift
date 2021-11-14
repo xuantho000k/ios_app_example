@@ -24,7 +24,7 @@ class ItemCollectionCell: UICollectionViewCell {
     
     func loadData(_ title: String, _ path: String) {
         lblTitle.text = title
-        let url = Router.getImageURL(path)
+        let url = Constants.getImageURL(path)
         imgView.setImage(url)
     }
 

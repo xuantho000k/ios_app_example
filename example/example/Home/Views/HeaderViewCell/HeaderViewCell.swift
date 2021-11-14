@@ -47,9 +47,9 @@ class HeaderViewCell: UITableViewCell {
     }
     
     func loadData(_ data: JSON) {
-        let backdrop = Router.getImageURL(data[Constants.Reponse.backdrop].stringValue)
+        let backdrop = Constants.getImageURL(data[Constants.Reponse.backdrop].stringValue)
         ivBackdrop.kf.setImage(with: URL(string: backdrop))
-        let poster = Router.getImageURL(data[Constants.Reponse.poster].stringValue)
+        let poster = Constants.getImageURL(data[Constants.Reponse.poster].stringValue)
         posterView.setImage(poster)
         lblTitle.text = data[Constants.Reponse.title].stringValue
         lblOverview.text = data[Constants.Reponse.overview].stringValue

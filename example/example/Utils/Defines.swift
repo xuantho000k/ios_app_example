@@ -12,14 +12,10 @@ import UIKit
 enum Constants {
     static let screenSize = UIScreen.main.bounds.size
     static let cornerRadius = CGFloat(6)
-    
-    enum Path {
-        static let credit = "/credits"
-        static let review = "/reviews"
-        static let video = "/videos"
-        static let recommendations = "/recommendations"
+    static func getImageURL(_ path: String) -> String {
+        return "https://image.tmdb.org/t/p/original" + path
     }
-    
+
     enum Request {
         static let key = "api_key"
         static let value = "ba8f9ef08851e0a16b8dbd5e8e2ddcb4"

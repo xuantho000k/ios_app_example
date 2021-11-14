@@ -25,7 +25,7 @@ class SubTitleCollectionCell: UICollectionViewCell {
     
     func loadData(_ data: JSON) {
         lblName.text = data[Constants.Reponse.name].stringValue
-        let url = Router.getImageURL(data[Constants.Reponse.profilePath].stringValue)
+        let url = Constants.getImageURL(data[Constants.Reponse.profilePath].stringValue)
         imgView.setImage(url)
     }
 

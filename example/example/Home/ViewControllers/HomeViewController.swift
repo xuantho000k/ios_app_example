@@ -13,9 +13,10 @@ class HomeViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var refresh: UIRefreshControl = UIRefreshControl()
+    private var refresh: UIRefreshControl = UIRefreshControl()
     
-    var data: [RowModel] = []
+    private var data: [RowModel] = []
+    private var service: MovieService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,8 @@ class HomeViewController: BaseViewController {
         
         addPullToRefresh()
         
+        let api = APIConnection()
+        service = MovieService(api)
         getData(false)
     }
     
@@ -106,25 +109,25 @@ class HomeViewController: BaseViewController {
     }
     
     private func getNowPlaying(_ page: Int, _ isRefresh: Bool, _ completion: @escaping (_ isSuccess: Bool) -> Void) {
-        APIManager.shared.getNowPlaying(page) { (result, error) in
+        service?.getNowPlaying(page) { (result, error) in
              completion(self.handleResult(result, page, .nowPlaying, isRefresh))
         }
     }
     
     private func getPopularMovies(_ page: Int, _ isRefresh: Bool, _ completion: @escaping (_ isSuccess: Bool) -> Void) {
-        APIManager.shared.getPopularMovies(page) { (result, error) in
+        service?.getPopularMovies(page) { (result, error) in
             completion(self.handleResult(result, page, .popular, isRefresh))
         }
     }
     
     private func getTopRatedMovies(_ page: Int, _ isRefresh: Bool, _ completion: @escaping (_ isSuccess: Bool) -> Void) {
-        APIManager.shared.getTopRatedMovies(page) { (result, error) in
+        service?.getTopRatedMovies(page) { (result, error) in
             completion(self.handleResult(result, page, .topRated, isRefresh))
         }
     }
     
     private func getUpcoming(_ page: Int, _ isRefresh: Bool, _ completion: @escaping (_ isSuccess: Bool) -> Void) {
-        APIManager.shared.getUpcomingMovies(page) { (result, error) in
+        service?.getUpcomingMovies(page) { (result, error) in
             completion(self.handleResult(result, page, .upcoming, isRefresh))
         }
     }
@@ -160,9 +163,11 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: ItemTitleViewCellDelegate {
     
     func didTapAtCell(withItemId id: Int) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.Id.movieDetail) as! MovieDetailViewController
-        vc.id = id
-        self.navigationController?.pushViewController(vc, animated: true)
+        if let vc = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.Id.movieDetail) as? MovieDetailViewController {
+            vc.id = id
+            vc.service = service
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
 //        vc?.modalPresentationStyle = .overCurrentContext
 //        self.navigationController?.present(vc!, animated: true, completion: nil)
     }

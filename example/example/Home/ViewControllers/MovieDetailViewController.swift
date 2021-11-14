@@ -14,7 +14,8 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var id: Int = 0
-    var data: [RowModel] = []
+    var service: MovieService?
+    private var data: [RowModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,19 +54,19 @@ class MovieDetailViewController: UIViewController {
     private func getData() {
         let group = DispatchGroup()
         group.enter()
-        APIManager.shared.getMovieDetail(id) { (result, error) in
+        service?.getMovieDetail(id) { (result, error) in
             _ = self.handleResult(result, 0, .header)
             group.leave()
         }
         
         group.enter()
-        APIManager.shared.getSeriesCast(id) { (result, error) in
+        service?.getSeriesCast(id) { (result, error) in
             _ = self.handleResult(result, 0, .cast)
             group.leave()
         }
         
         group.enter()
-        APIManager.shared.getVideos(id) { (result, error) in
+        service?.getVideos(id) { (result, error) in
             _ = self.handleResult(result, 0, .video)
             group.leave()
         }
@@ -95,13 +96,13 @@ class MovieDetailViewController: UIViewController {
     }
     
     private func getComments(_ page: Int, _ completion: @escaping (_ isSuccess: Bool) -> Void) {
-        APIManager.shared.getComments(id, page) { (result, error) in
+        service?.getComments(id, page) { (result, error) in
             completion(self.handleResult(result, page, .comment))
         }
     }
     
     private func getRecomendations(_ page: Int, _ completion: @escaping (_ isSuccess: Bool) -> Void) {
-        APIManager.shared.getMovieRecomendations(id, page) { (result, error) in
+        service?.getMovieRecomendations(id, page) { (result, error) in
             completion(self.handleResult(result, page, .recomendation))
         }
     }

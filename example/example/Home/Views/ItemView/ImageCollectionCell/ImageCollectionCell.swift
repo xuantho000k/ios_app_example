@@ -22,7 +22,7 @@ class ImageCollectionCell: UICollectionViewCell {
     }
     
     func loadData(_ path: String) {
-        let url = Router.getImageURL(path)
+        let url = Constants.getImageURL(path)
         imgView.setImage(url)
     }
 
